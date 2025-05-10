@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NutriGuard AI — Product Lookup</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/quagga/dist/quagga.min.js"></script>
+</head>
+<body>
+
+  <h2>🍏 NutriGuard AI — Product Lookup</h2>
+
+  <a href="index.html">
+    <button>🏠 Home</button>
+  </a>
+
+  <div id="lookup-section">
+    <input type="text" id="barcode" placeholder="Enter Barcode Number" />
+    <button onclick="fetchProductInfo()">Fetch Info</button>
+
+    <div id="info">Enter a barcode number and click Fetch Info.</div>
+
+    <div id="scanner-container">
+      <p><button onclick="startScanner()">📷 Start Barcode Scanner</button></p>
+      <div id="barcode-result"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

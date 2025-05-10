@@ -1,0 +1,139 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 20px;
+    background: #f0fdf4;
+    text-align: center;
+    color: #333;
+    animation: fadeInBody 1s ease;
+  }
+  
+  h1, h2 {
+    color: #2f855a;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    margin: 0 12px;
+    color: #38a169;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #22543d;
+  }
+  
+  input, button {
+    padding: 14px 20px;
+    font-size: 16px;
+    margin: 12px 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+  }
+  
+  input {
+    background: #fff;
+  }
+  
+  button {
+    background-color: #38a169;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px rgba(56, 161, 105, 0.3);
+    transition: background-color 0.3s ease, transform 0.1s ease;
+  }
+  
+  button:hover {
+    background-color: #2f855a;
+  }
+  
+  button:active {
+    transform: scale(0.97);
+  }
+  
+  #info {
+    margin-top: 25px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    animation: fadeIn 1s ease;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #2f855a;
+  }
+  
+  #scanner-container {
+    width: 100%;
+    height: 400px;
+    background: #C7DB9C;
+    margin-top: 20px;
+    position: relative;
+    border: 2px dashed #cbd5e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.03);
+    animation: fadeIn 1s ease;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    } 
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInBody {
+    from {
+      opacity: 0;
+    } 
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    body {
+      padding: 15px;
+    }
+  
+    input, button {
+      width: 92%;
+      padding: 14px;
+      margin: 8px 0;
+      font-size: 16px;
+    }
+  
+    #info {
+      padding: 18px;
+    }
+  
+    #scanner-container {
+      height: 300px;
+    }
+  }
+  
